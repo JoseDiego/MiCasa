@@ -1,0 +1,262 @@
+@import url("../fonts/font-awesome/font-awesome.css");
+
+
+/* FOOTER
+-------------------------------------------------- */
+#footer {
+  background: #272e36;
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+#footer .line-title {
+  color: #fff;
+  text-transform: uppercase;
+}
+#footer .top {
+  padding-top: 60px;
+  min-height: 330px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+#footer .top h5 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 0 20px 0;
+  display: block;
+  padding-bottom: 15px;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+}
+#footer .top h5:after {
+  content: "";
+  height: 1px;
+  background: #e74c3c;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 60px;
+}
+#footer .bottom {
+  height: 60px;
+  background: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+#footer .bottom .copy-text {
+  line-height: 59px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 11px;
+  float: left;
+}
+#footer .bottom .copy-text a {
+  color: rgba(255, 255, 255, 0.7);
+}
+#footer .bottom .copy-text a:hover {
+  color: #fff;
+}
+#footer .bottom .social-buttons {
+  float: right;
+  margin-top: 12px;
+}
+#footer .bottom .social-buttons .fa {
+  opacity: 0.6;
+}
+#footer .bottom .social-buttons .fa:hover {
+  opacity: 1;
+}
+#footer .newsletter-signup .form-control {
+  border: none;
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+}
+#footer .newsletter-signup .btn {
+  padding: 0 12px;
+  line-height: 30px;
+  height: 30px;
+  font-size: 12px;
+}
+#footer .links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer .links li {
+  line-height: 2em;
+}
+#footer .links li a {
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+}
+#footer .links li a:hover {
+  color: #fff;
+}
+#footer .links.underline li {
+  line-height: 2.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+#footer .links.underline li a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#footer .links.underline li:last-child, #footer .links.underline li:last-child a {
+  border: none;
+}
+@media (max-width: 991px) {
+  #footer .top {
+    font-size: 11px;
+  }
+}
+@media (max-width: 767px) {
+  #footer .top {
+    font-size: 11px;
+    min-height: 0;
+    padding: 40px 0;
+  }
+  #footer .top .row .col-md-3 {
+    margin: 15px 0;
+  }
+  #footer .top .row .col-md-3:nth-child(1), #footer .top .row .col-md-3:nth-child(2) {
+    display: none;
+  }
+  #footer .bottom {
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+  #footer .bottom .copy-text {
+    float: none;
+    line-height: 1;
+    padding: 20px 0;
+    margin-top: 15px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: block;
+  }
+  #footer .bottom .social-buttons {
+    float: none;
+  }
+}
+
+/* SOCIAL BUTTONS
+---------------------------------------------------*/
+.social-buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-buttons li {
+  display: inline-block;
+  margin: 0 6px 0 0;
+}
+.social-buttons a {
+  display: block;
+  color: white;
+}
+.social-buttons .fa {
+  font-size: 15px;
+  line-height: 35px;
+  text-align: center;
+  width: 35px;
+  display: block;
+}
+.social-buttons .white-outline .fa {
+  border: 1px solid #fff;
+}
+.social-buttons.colored-bg .fa-facebook {
+  background-color: #5371ad;
+}
+.social-buttons.colored-bg .fa-twitter {
+  background-color: #2aa9e0;
+}
+.social-buttons.colored-bg .fa-google-plus {
+  background-color: #d34829;
+}
+.social-buttons.colored-bg .fa-rss {
+  background-color: #ef5c29;
+}
+.social-buttons.colored-bg .fa-linkedin {
+  background-color: #016597;
+}
+.social-buttons.colored-bg .fa-skype {
+  background-color: #37c5f5;
+}
+.social-buttons.colored-bg .fa-pinterest {
+  background-color: #ce2127;
+}
+.social-buttons.colored-bg-1 .fa {
+  background-color: #e74c3c;
+  color: #fff;
+}
+.social-buttons.colored-bg-2 .fa {
+  background-color: #5b616a;
+  color: #fff;
+}
+.social-buttons.colored-bg-on-hover .fa-facebook:hover {
+  background-color: #5371ad;
+  color: #fff;
+}
+.social-buttons.colored-bg-on-hover .fa-twitter:hover {
+  background-color: #2aa9e0;
+  color: #fff;
+}
+.social-buttons.colored-bg-on-hover .fa-google-plus:hover {
+  background-color: #d34829;
+  color: #fff;
+}
+.social-buttons.colored-bg-on-hover .fa-rss:hover {
+  background-color: #ef5c29;
+  color: #fff;
+}
+.social-buttons.colored-bg-on-hover .fa-linkedin:hover {
+  background-color: #016597;
+  color: #fff;
+}
+.social-buttons.colored-bg-on-hover .fa-skype:hover {
+  background-color: #37c5f5;
+  color: #fff;
+}
+.social-buttons.colored-bg-on-hover .fa-pinterest:hover {
+  background-color: #ce2127;
+  color: #fff;
+}
+.social-buttons.colored .fa-facebook {
+  color: #5371ad;
+  background: #f2f2f2;
+}
+.social-buttons.colored .fa-twitter {
+  color: #2aa9e0;
+  background: #f2f2f2;
+}
+.social-buttons.colored .fa-google-plus {
+  color: #d34829;
+  background: #f2f2f2;
+}
+.social-buttons.colored .fa-rss {
+  color: #ef5c29;
+  background: #f2f2f2;
+}
+.social-buttons.colored .fa-linkedin {
+  color: #016597;
+  background: #f2f2f2;
+}
+.social-buttons.colored .fa-skype {
+  color: #37c5f5;
+  background: #f2f2f2;
+}
+.social-buttons.colored .fa-pinterest {
+  color: #ce2127;
+  background: #f2f2f2;
+}
+.social-buttons.round .fa {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+}
