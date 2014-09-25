@@ -23,7 +23,7 @@
 	            <div class="navbar-collapse collapse">
 	              <ul class="nav navbar-nav nav-buttons navbar-right">
 	                <li class="active"><a href="index.html"><i class="icon fa fa-home"></i>Inicio</a></li>
-	                <li><a href="javascript:void(0)"><i class="icon fa fa-building"></i>Viviendas</a></li>
+	                <li><a href="viviendas.html"><i class="icon fa fa-building"></i>Viviendas</a></li>
 	                <li><a href="javascript:void(0)"><i class="icon fa fa-gears"></i> Servicios</a></li>
 	                <li><a href="javascript:void(0)"><i class="icon fa fa-comments"></i> Blog</a></li>
 	                <li><a class="nav-btn bg-1" href="javascript:void(0)"><i class="fa fa-envelope"></i>Contacto</a></li>
@@ -34,38 +34,71 @@
 	        </div>
 		</header>
 		<section>
-			<div class="jumbotron">
-		      <div class="container">
-		        <h1>Version 1.0 de Mi Casa</h1>
-		        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-		        <p><a class="btn btn-primary btn-lg" role="button">Learn more »</a></p>
-		      </div>
-		    </div>
+				<div class="jumbotron">
+			      <div class="container">
+			      	<div class="row">
+			      		<div class="col-md-4">
+					        <div class="panel panel-default">
+							  <div class="panel-body">
+							  	<h3>Ingrese los Criterios de Busqueda</h3>
+							  	<form role="form">
+								  <div class="form-group">
+								    <label for="departamento">Departamento</label>
+								    <input type="text" class="form-control" id="departamento" placeholder="Ej. Lima, La Libertad...">
+								  </div>
+								  <div class="form-group">
+								    <label for="tipoPropiedad">Tipo de Propiedad</label>
+								    <select class="form-control" id="tipoPropiedad" >
+					        			<option>Departamento</option>
+					        			<option>Proyecto</option>
+					        			<option>Vivienda</option>
+					        		</select>
+								  </div>
+								  <div class="form-group">
+								    <label for="tipoNegocio">Tipo de Negocio</label>
+								    <select class="form-control" id="tipoNegocio" >
+					        			<option>Alquiler</option>
+					        			<option>Compra</option>
+					        		</select>
+								  </div>
+								  <div class="form-group">
+								    <label for="monto">Monto Promedio</label>
+								    <input type="text" class="form-control" id="monto" placeholder="S/. 500 - S./ 300,000">
+								  </div>
+								  <a class="btn btn-primary" href="viviendas.html" role="button">Buscar </a>
+								</form>
+							  </div>
+							</div>
+						</div>
+					</div>
+			      </div>
+			    </div>
 		</section>
 		<section>
 			<div class="container">
 		      <!-- Example row of columns -->
 		      <div class="row">
+		      	<center><h1>Top Viviendas / Proyectos</h1></center>
 		        <div class="col-md-4">
-		          <h2>Heading</h2>
+		          <h2>Vivienda en Lima</h2>
 		          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 		          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
 		        </div>
 		        <div class="col-md-4">
-		          <h2>Heading</h2>
+		          <h2>Proyecto ASD</h2>
 		          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 		          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
 		       </div>
 		        <div class="col-md-4">
-		          <h2>Heading</h2>
+		          <h2>Otro Proyecto</h2>
 		          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 		          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
 		        </div>
 		      </div>
 		    </div>
 		</section>
+		<hr>
 		<footer id="footer">
-        
         <div class="bottom">
           <div class="container">
             <ul class="social-buttons colored-bg-on-hover round clearfix">
@@ -80,5 +113,7 @@
         </div>
       </footer>
 	</div>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
