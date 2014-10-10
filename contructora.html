@@ -1,1 +1,2139 @@
-contructora.html
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<!-- Apple Touch -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../images/apple-touch-icon-57-precomposed.png">
+		<!-- Use title if it's in the page YAML frontmatter -->
+		<title>Mi Casa / Bienvenida</title>
+		<script type="text/javascript">
+		var polyfilter_scriptpath = "/polyfills/filters/";
+		window.polyfilter_skip_stylesheets = true
+		</script>
+		<link href="css/admin.css" media="screen" rel="stylesheet" type="text/css">
+		<!--[if lte IE 9]>
+			<link href="../stylesheets/application_split2.css" media="screen" rel="stylesheet" type="text/css" />
+			<link href="../stylesheets/application_split3.css" media="screen" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<script src="js/application.js" type="text/javascript"></script>
+	</head>
+	<body class="high emerald-default htmls htmls_dashboard">
+		<div class="modal blur jump-to-modal" id="jump-to-menu">
+			<div class="modal-dialog modal-lg">
+				<div class="clearfix">
+					<button type="button" class="close pull-right text-white-dk"
+					data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="container-fluid">
+					<div class="row text-center vpadded-row">
+						<div class="col-sm-4">
+							<a href="http://panel.allegroreceipts.com">
+								<div class="jump-to-element padded text-gradient-white text-component-shadow">
+									<i class="icm icm-chart icm-4x"></i>
+									<h5>Dashboard</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a href="/receipts/">
+								<div class="jump-to-element padded text-gradient-white text-component-shadow">
+									<i class="icm icm-stack2 icm-4x"></i>
+									<h5>Receipts</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a href="perfil.html">
+								<div class="jump-to-element padded text-gradient-white text-component-shadow">
+									<i class="icm icm-user icm-4x"></i>
+									<h5>Profile</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a href="/pricing/">
+								<div class="jump-to-element padded text-gradient-white text-component-shadow">
+									<i class="icm icm-insert-template icm-4x"></i>
+									<h5>Plans & Pricing</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a href="/store/">
+								<div class="jump-to-element padded text-gradient-white text-component-shadow">
+									<i class="icm icm-coin icm-4x"></i>
+									<h5>Store</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a href="/badges/">
+								<div class="jump-to-element padded text-gradient-white text-component-shadow">
+									<i class="icm icm-grid icm-4x"></i>
+									<h5>Badges</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-4">
+							<a href="/contact/">
+								<div class="jump-to-element padded text-gradient-white text-component-shadow">
+									<i class="icm icm-clipboard3 icm-4x"></i>
+									<h5>Contact</h5>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header ">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title"></h4>
+				</div>
+				<div class="modal-body">
+					Allegro.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="oc-xs-push-push oc-sm-squeeze-push oc-md-squeeze-push oc-lg-squeeze-push modal-blur-content">
+		<div id="oc-wrapper" class="oc-wrapper oc-lg-open-left oc-md-partial-left oc-sm-partial-left oc-lg-left-squeeze oc-md-left-squeeze oc-sm-left-squeeze oc-xs-left-push oc-lg-right-push oc-md-right-push oc-sm-right-push oc-xs-right-push">
+			<div class="oc-push oc-scroll">
+				<aside id="main-oc-sidebar-left" class="oc-sidebar oc-sidebar-left oc-sidebar-fixed nano">
+					<div class="nano-content">
+						<script type="text/template" id="bigdrop">
+						<div class="panel panel-success no-margin-bottom">
+							<div class="tab-content">
+								<div class="padded tab-pane active fade in" id="uid0d2549da793cf0722d179e5ab6e05aca">
+									<ul class="list-group list-group-connected">
+										<li class="list-group-item">
+											<a href="#">Jose Diego ha Visto tu Anuncio <a href="">#1231</a></a>
+											<br>
+											<small class="text-muted">Hoy</small>
+											<i class="icm icm-star6 pull-right text-info"></i>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Jose Diego ha Visto tu Anuncio <a href="">#1231</a></a>
+											<br>
+											<small class="text-muted">Hoy</small>
+											<i class="icm icm-star6 pull-right text-info"></i>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Jose Diego ha Visto tu Anuncio <a href="">#1231</a></a>
+											<br>
+											<small class="text-muted">Ayer</small>
+											<i class="icm icm-star6 pull-right text-info"></i>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Jose Diego ha Visto tu Anuncio <a href="">#1231</a></a>
+											<br>
+											<small class="text-muted">Esta semana</small>
+											<i class="icm icm-star6 pull-right text-info"></i>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Alguien trato de entrar a tu cuenta. Click aqui para cambiar tu contraseña.</a>
+											<br>
+											<small class="text-muted">Semana Pasada</small>
+											<i class="icm icm-star6 pull-right text-info"></i>
+										</li>
+										<!--<li class="list-group-item"><a href="#">You have a new Eco Reward. Click here to check it out!</a><br><small class="text-muted">Last week</small><i class="icm icm-star6 pull-right text-info"></i></li>-->
+									</ul>
+									<!--<div class="padded-top text-center"><a class="btn btn-default btn-xs" href="#">Show all events</a></div>-->
+								</div>
+								<div class="padded tab-pane fade" id="uid834f5033ac1d6fb8ee1938c01af7aa45">
+									<ul class="list-group list-group-connected">
+										<li class="list-group-item">
+											<a href="#">MK Hickox</a>
+											<br>
+											<small class="text-muted">mk@allegroreceipts.com</small>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Dennis Fan</a>
+											<br>
+											<small class="text-muted">dennis@allegroreceipts.com</small>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Jason Au</a>
+											<br>
+											<small class="text-muted">jason@allegroreceipts.com</small>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Mia Sanders</a>
+											<br>
+											<small class="text-muted">mia@allegroreceipts.com</small>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Lindsay Virene</a>
+											<br>
+											<small class="text-muted">lindsay@allegroreceipts.com</small>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Tony Yao</a>
+											<br>
+											<small class="text-muted">tony@allegroreceipts.com</small>
+										</li>
+										<li class="list-group-item">
+											<a href="#">Jamie Lee</a>
+											<br>
+											<small class="text-muted">jamie@allegroreceipts.com</small>
+										</li>
+									</ul>
+									<!--<div class="padded-top text-center"><a class="btn btn-default btn-xs" href="#">Show all leads</a></div>-->
+								</div>
+								<div class="padded tab-pane fade" id="uid40fc5180e7d40acbf216d2b440fa9558">
+									<ul class="list-group list-group-connected">
+										<li class="list-group-item">
+											<input type="checkbox" rel="icheck" class="table-checkable" disabled>
+											<a href="#">Spend less than $50 today</a>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" rel="icheck" class="table-checkable" checked disabled>
+											<a href="#">Spend less than $200 this week</a>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" rel="icheck" class="table-checkable" checked disabled>
+											<a href="#">Spend less than $500 this month</a>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" rel="icheck" class="table-checkable" disabled>
+											<a href="#">Spend less than $50 on Coffee this month</a>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" rel="icheck" class="table-checkable" checked disabled>
+											<a href="#">Spend less than $100 on Entertainment this month</a>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" rel="icheck" class="table-checkable" disabled>
+											<a href="#">Spend less than $200 on Groceries this month</a>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" rel="icheck" class="table-checkable" checked disabled>
+											<a href="#">Save 25 receipts from being printed this month</a>
+										</li>
+										<li class="list-group-item">
+											<input type="checkbox" rel="icheck" class="table-checkable" checked disabled>
+											<a href="#">Gain 100 Eco Points this week</a>
+										</li>
+									</ul>
+									<!--<div class="padded-top text-center"><a class="btn btn-default btn-xs" href="#">Show all tasks</a></div>-->
+								</div>
+							</div>
+							<div class="panel-colorize gradient-diag1">
+								<ul class="nav nav-justified-all nav-arrow-top">
+									<li class="active">
+										<a href="#uid0d2549da793cf0722d179e5ab6e05aca" data-toggle="tab">
+											<i class="icm icm-stack"></i>
+											<div>Mensajes</div>
+										</a>
+									</li>
+									<li>
+										<a href="#uid834f5033ac1d6fb8ee1938c01af7aa45" data-toggle="tab">
+											<i class="icm icm-users"></i>
+											<div>Contacts</div>
+										</a>
+									</li>
+									<li>
+										<a href="#uid40fc5180e7d40acbf216d2b440fa9558" data-toggle="tab">
+											<i class="icm icm-list"></i>
+											<div>Goals</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						</script>
+						<div class="oc-sidebar-header">
+							<ul class="nav nav-justified-all">
+								<li>
+									<a id="oc-left-toggle" href="#oc-wrapper"
+										class="btn-nav" style="width: 50px;"
+										data-toggle="offcanvas" data-control="left"
+										data-states="open,partial"
+										data-persist="lg,md,sm"
+										data-parent="body" data-sibling="right">
+										<i class="icm icm-menu6 oc-partial-rotate"></i>
+									</a>
+								</li>
+								<li>
+									<a class="btn-nav" data-toggle="modal" href="#jump-to-menu">
+										<i class="icm icm-arrow-right6"></i>
+									</a>
+								</li>
+								<li>
+									<a class="btn-nav" href="#" rel="popover-click"
+										data-toggle="popover"
+										data-container="body"
+										data-placement="bottom">
+										<i class="icm icm-bubbles5 has-corner-badge animated tada">
+										<span class="badge badge-corner badge-corner-top-right badge-info-dk">
+										<i class="fa fa-exclamation"></i>
+										</span>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="oc-sidebar-content" id="collapseAvatarLeft">
+							<ul class="nav nav-stacked oc-sidebar-nav visible-xs">
+								<li>
+									<form class="oc-header oc-search" role="search">
+										<div class="form-group has-header">
+											<span class="icm icm-search3 form-control-header"></span>
+											<input type="text" class="form-control" placeholder="Search">
+										</div>
+									</form>
+								</li>
+								<li class="dropdown">
+									<a href="#dropdownUserSidebar" class="collapsed"  data-toggle="collapse" data-parent="#collapseAvatarLeft">
+										<div class="media">
+											<img class="img-circle media-object pull-left" src="../images/faker/avatars/48/Faces_Users-05.png" />
+											<div class="media-body">
+												<h4 class="media-heading">Allegro Demo</h4>
+												Welcome to Allegro!
+												
+											</div>
+										</div>
+									</a>
+									<ul class="collapse dropdown-menu" id="dropdownUserSidebar">
+										<li>
+											<a href="http://panel.allegroreceipts.com/profile/">
+												<i class="icm icm-user"></i> Profile
+											</a>
+										</li>
+										<li>
+											<a href="http://panel.allegroreceipts.com/profile/">
+												<i class="icm icm-cog"></i> Settings
+											</a>
+										</li>
+										<li>
+											<a href="http://panel.allegroreceipts.comlogin.html">
+												<i class="icm icm-switch text-danger"></i>
+												<span class="text-danger">Sign out</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<form class="oc-header oc-search oc-partial-hidden oc-filter" role="search">
+								<div class="form-group has-header oc-reveal collapsed">
+									<span class="icm icm-filter3 form-control-header"></span>
+									<input type="text" class="form-control oc-menu-filter"
+									placeholder="Filtrar menu" data-toggle="listfilter" data-target="#collapseNavbarLeft2">
+								</div>
+							</form>
+							<ul class="nav nav-stacked oc-sidebar-nav" id="collapseNavbarLeft2">
+								<li class=" active">
+									<a rel="popover" data-container="body" data-placement="right" data-content="Dashboard de Mi Casa." href="contructora.html">
+										<i class="oc-partial-icon icm icm-screen4"></i>
+										<span class="oc-partial-menu-item">
+										Dashboard
+										
+										</span>
+									</a>
+								</li>
+								<li>
+									<a rel="popover" data-container="body" data-placement="right" data-content="Tus Anuncios." href="anuncios.html">
+										<i class="oc-partial-icon icm icm-stack2"></i>
+										<span class="oc-partial-menu-item">
+										Anuncios
+										
+										</span>
+									</a>
+								</li>
+								<li>
+									<a rel="popover" data-container="body" data-placement="right" data-content="Edita y Muestra tu Perfil.
+										" href="perfil.html">
+										<i class="oc-partial-icon icm icm-user"></i>
+										<span class="oc-partial-menu-item">
+										Perfil
+										
+										</span>
+									</a>
+								</li>
+								<li>
+									<a rel="popover" data-container="body" data-placement="right" data-content="Mira los Mensajes que has Recibido!
+										" href="bandeja.html">
+										<i class="oc-partial-icon icm icm-envelope"></i>
+										<span class="oc-partial-menu-item">
+										Bandeja
+										
+										</span>
+									</a>
+									<span class='badge badge-primary oc-nav-caption'>7</span>
+								</li>
+								<li>
+									<a rel="popover" data-container="body" data-placement="right" data-content="Estadisticas de Todos tus Datos.
+										" href="/store/">
+										<i class="oc-partial-icon icm icm-stats-up"></i>
+										<span class="oc-partial-menu-item">
+										Estadisticas
+										
+										</span>
+									</a>
+								</li>
+								<li>
+									<a rel="popover" data-container="body" data-placement="right" data-content="Mira la Lista de Precios.
+										" href="precios.html">
+										<i class="oc-partial-icon icm icm-insert-template"></i>
+										<span class="oc-partial-menu-item">
+										Planes & Precios
+										
+										</span>
+									</a>
+								</li>
+								
+								<li>
+									<a rel="popover" data-container="body" data-placement="right" data-content="Contact us
+										" href="/contact/">
+										<i class="oc-partial-icon icm icm-clipboard3"></i>
+										<span class="oc-partial-menu-item">
+										Contacto
+										
+										</span>
+									</a>
+								</li>	
+							</ul>
+					</li>
+				</ul>
+				<div class="oc-partial-hidden">
+					<div class="padded">
+						<button class="btn btn-black-dk btn-block" rel="popover" id="reset-localstorage"
+						data-toggle="popover" data-placement="top"
+						data-content="Si tienes algun problema, avisanos.">
+						<span class="text-dark-lt">Contactar Ayuda</span>
+						</button>
+					</div>
+					<div class="padded">
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="easy-pie-chart easy-pie-chart-normal"
+									data-percent="75"
+									data-color="black-dk"
+									data-size="80"
+									data-line-width="8"
+									data-scale-color="false"
+									data-track-color="rgba(255,255,255,.05)">
+									<span>75%</span>
+								</div>
+								<p class="text-center">Ganancia</p>
+							</div>
+							<div class="col-xs-6">
+								<div class="easy-pie-chart easy-pie-chart-normal"
+									data-percent="20"
+									data-color="black-dk"
+									data-size="80"
+									data-line-width="8"
+									data-scale-color="false"
+									data-track-color="rgba(255,255,255,.05)">
+									<span>60</span>
+								</div>
+								<p class="text-center">Anuncios</p>
+							</div>
+						</div>
+					</div>
+					<div class="padded">
+						<span class="copy-text">Copyright © 2014 Mi Casa. Todos los Derechos Reservados.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<div id="main-oc-container" class="oc-container">
+		<nav class="navbar navbar-default navbar-static-top navbar-inplace" role="navigation">
+			<ul class="nav navbar-nav navbar-left pull-left hidden-sm hidden-md hidden-lg">
+				<li>
+					<a id="oc-left-toggle-xs" href="#oc-wrapper"
+						class="btn-nav pull-left "
+						data-toggle="offcanvas" data-control="left"
+						data-states="open,hidden"
+						data-persist="lg,md,sm"
+						data-parent="body" data-sibling="right">
+						<i class="icm icm-menu6"></i>
+					</a>
+				</li>
+			</ul>
+			<a class="navbar-brand" href="/">
+				<i class="fa fa-home text-gradient-info-dk"></i>
+				<span class="text-gradient-info-dk">Mi Casa</span>
+			</a>
+			<!--<ul class="nav navbar-nav navbar-right pull-right"><li id="oc-right-toggle-container"><a id="oc-right-toggle" href="#oc-wrapper" class="btn-nav sidebar-toggle-right"
+				
+				rel="tooltip" title="Toggle chat"
+				data-placement="bottom"
+				data-container="#oc-right-toggle-container"
+				
+				data-toggle="offcanvas" data-control="right"
+				data-states="open,hidden"
+			data-persist="lg,md,sm"><i class="fa fa-lg fa-comments has-corner-badge"><span class="badge badge-corner badge-corner-top-right badge-info">3</span></i></a></li></ul>-->
+			<ul class="nav navbar-nav navbar-right pull-right hidden-xs">
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" class="navbar-img-link">
+						<img class="img-circle" src="img/Faces_Users-05.png" />
+						<span class="hidden-xs hidden-sm hidden-md">&nbsp;&nbsp;Constructora</span>
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu animated fadeIn fast">
+						<li>
+							<a href="perfil.html">
+								<i class="fa fa-user"></i> Perfil
+								
+							</a>
+						</li>
+						<li>
+							<a href="perfil.html">
+								<i class="fa fa-cog"></i> Configuracion
+								
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<a href="login.html">
+									<i class="fa fa-power-off text-danger"></i>
+									<span class="text-danger">Log Out</span>
+								</a>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav nav-center hidden-xs">
+				<li>
+					<!--<form class="navbar-form-inplace navbar-form-search navbar-right" role="search"><div class="form-group has-header selectize-search no-margin-bottom"><span class="fa fa-search form-control-header"></span><input type="text" class="form-control selectize-search-movie" placeholder="Search stores..."></div></form>-->
+				</li>
+			</ul>
+		</nav>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3 class="em-page-header v-mid-row thin">
+					<i class="icm icm-screen4 text-gradient-info-dk"></i>
+					<span class="text-gradient-info-dk">
+					Dashboard
+					
+					</span>
+					</h3>
+				</div>
+				<div class="col-sm-6 text-right-sm text-right-md text-right-lg">
+					<ul class="breadcrumb breadcrumb-top">
+						<li>
+							<i class="fa fa-home"></i> Home
+						</li>
+						<li class="active">
+							
+							Dashboard
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<style type="text/css">
+		#gmap {
+		width: 100%;
+		height: 480px;
+		}
+		</style>
+		<div class="container-fluid turbo-cols-static turbo-grid-wrap">
+			<div class="turbo-grid">
+				<div class="row" rel="panels">
+					<div class="col-md-6 panels" id="ridb9b7d1002b4e3bd2959385b0f1d60e0c1">
+						<div class="panel">
+							<div class="row">
+								<div class="col-sm-5 turbo-toggle">
+							        <div class="tile-normal bg-success gradient-diag1">
+							          <div class="panel-heading">
+							            <div class="panel-title">Visitas a Anuncios</div>
+							          </div>
+							          <div class="panel-body">
+							            <table class="table-full push-bottom">
+							                  <tbody><tr>
+							                    <td>
+							                      <h5 class="base-header major">EMPRESAS</h5>
+							                    </td>
+							                    <td class="text-right">
+							                      <h3 class="base-header text-right">
+							                        322
+							                      </h3>
+							                    </td>
+							                  </tr>
+							                  <tr>
+							                    <td>
+							                      <h5 class="base-header major">VISITANTES</h5>
+							                    </td>
+							                    <td class="text-right">
+							                      <h3 class="base-header text-right">
+							                        848
+							                      </h3>
+							                    </td>
+							                  </tr>
+							                  <tr>
+							                    <td>
+							                      <h5 class="base-header major">CLIENTES</h5>
+							                    </td>
+							                    <td class="text-right">
+							                      <h3 class="base-header text-right">
+							                        380
+							                      </h3>
+							                    </td>
+							                  </tr>
+							            </tbody></table>
+
+							            <div class="progress flat-progress" rel="tooltip" title="60% complete">
+							              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+							                <span class="sr-only">60% Completo</span>
+							              </div>
+							            </div>
+
+							            <div class="clearfix">
+							              <h5 class="pull-left base-header major">Hoy</h5>
+							              <h5 class="base-header major">
+							              <span class="pull-right panel-lt box-label">
+							                63
+							              </span>
+							              </h5>
+							            </div>
+							          </div>
+							        </div>
+							      </div>
+								<div class="col-sm-7 pull-left-lg no-pull-xs">
+									<div class="panel-heading">
+										<div class="panel-title">Ultimos 7 Dias</div>
+										<!--<a href="#" class="turbo-toggle badge badge-success-lt badge-rounded badge-empty badge-grow"></a><a href="#" class="turbo-toggle badge badge-info-lt badge-rounded badge-empty badge-grow"></a><a href="#" class="turbo-toggle badge badge-primary-lt badge-rounded badge-empty badge-grow"></a><div class="reportrange pull-right"><i class="fa fa-calendar-o"></i><span></span><b class="caret"></b></div>-->
+									</div>
+									<div class="panel-body" style="padding-top: 20px">
+										<div id="chart1" style="height: 150px;" class="flot-transparent-line" data-flot-line-color="success"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 panels" id="ridb9b7d1002b4e3bd2959385b0f1d60e0c2">
+						<div class="carousel slide vertical tile-normal" data-ride="carousel">
+							<div class="carousel-inner bg-primary-lt gradient-diag1">
+								<div class="item active">
+									<div class="padded">
+										<h4 class="text-white base-header">Gastos este mes</h4>
+										<h2 class="text-white base-header major">$138.89</h2>
+										<h5>
+										<i class="fa fa-caret-down"></i> 23% que el mes pasado
+										</h5>
+										<h4 class="text-white base-header">Transacciones este mes</h4>
+										<h2 class="text-white base-header major">2 anuncios</h2>
+										<h5>
+										<i class="fa fa-caret-down"></i> 25% mas que el mes pasado
+										</h5>
+									</div>
+									<div class="hpadded">
+										<!--<div class="sparkline-line"></div>-->
+									</div>
+								</div>
+								<div class="item">
+									<div class="padded">
+										<h4 class="text-white base-header">Gastos el mes pasado</h4>
+										<h2 class="text-white base-header major">$180.38</h2>
+										<h5>
+										<i class="fa fa-caret-up"></i> 11% mas que el mes anterior
+										</h5>
+										<h4 class="text-white base-header">Transacciones el mes pasado</h4>
+										<h2 class="text-white base-header major">1 anuncio</h2>
+										<h5>
+										<i class="fa fa-caret-up"></i> 25% mas que el mes anterior
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 panels" id="ridb9b7d1002b4e3bd2959385b0f1d60e0c3">
+						<div class="carousel slide vertical tile-normal" data-ride="carousel">
+							<div class="carousel-inner bg-warning gradient-diag1-inverse">
+								<div class="item active">
+									<div class="padded">
+										<h4 class="text-white base-header">Gastos Anuales</h4>
+										<h2 class="text-white base-header major">$1013.79</h2>
+										<h5>
+										<i class="fa fa-caret-up"></i> 9% mas que 2013
+										</h5>
+										<h4 class="text-white base-header">Porcentaje de Ganancia</h4>
+									</div>
+									<div class="hpadded" style="margin-top:-10px;">
+										<div class="easy-pie-chart easy-pie-chart-normal"
+											data-percent="75"
+											data-color="white"
+											data-size="90"
+											data-line-width="8"
+											data-scale-color="false"
+											data-track-color="rgba(255,255,255,0.3)">
+											<span>75%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" rel="panels">
+					<div class="col-md-9 panels" id="ridb9b7d1002b4e3bd2959385b0f1d60e0c4">
+						<div class="panel panel-danger">
+							<div class="panel-colorize gradient-diag1">
+								<div class="panel-heading no-padding">
+									<div class="panel-actions pull-right panel-actions-reveal ">
+										<span class="panel-actions-reveal-hide animated fadeInRight">
+										<span class="panel-action panel-classify">
+										<select rel="classselector">
+											<option>panel-white</option>
+											<option>panel-light</option>
+											<option>panel-dark</option>
+											<option>panel-black</option>
+											<option>panel-inverse</option>
+											<option>panel-primary</option>
+											<option>panel-info</option>
+											<option>panel-success</option>
+											<option>panel-warning</option>
+											<option>panel-danger</option>
+										</select>
+										</span>
+										<span class="panel-action panel-close">
+										<i class="fa fa-times"></i>
+										</span>
+										</span>
+										&nbsp;&nbsp;
+										<i class="fa fa-bars panel-actions-reveal-icon"></i>
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="padded text-center-xs">
+												<h4 class="text-white base-header">Gasto en Anuncios: Por Meses</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content">
+									<div class="tab-pane fade in active" id="traffic">
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="panel-body no-padding-top">
+													<div class="flot-transparent-line tile-normal" data-big-graph></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="server">
+										<div class="row padded-top">
+											<div class="col-sm-4 text-center">
+												<div class="easy-pie-chart easy-pie-chart-normal"
+													data-percent="47"
+													data-color="white"
+													data-size="140"
+													data-line-width="8"
+													data-scale-color="false"
+													data-track-color="rgba(255,255,255,0.3)">
+													<span>47%</span>
+												</div>
+												<div class="padded">
+													<h3 class="no-margin-top">CPU Usage</h3>
+													<p>
+													<a href="#">Manage CPU Resources</a>
+													</p>
+												</div>
+											</div>
+											<div class="col-sm-4 text-center">
+												<div class="easy-pie-chart easy-pie-chart-normal"
+													data-percent="30"
+													data-color="white"
+													data-size="140"
+													data-line-width="8"
+													data-scale-color="false"
+													data-track-color="rgba(255,255,255,0.3)">
+													<span>30%</span>
+												</div>
+												<div class="padded">
+													<h3 class="no-margin-top">RAM Usage</h3>
+													<p>
+													<a href="#">Manage RAM Resources</a>
+													</p>
+												</div>
+											</div>
+											<div class="col-sm-4 text-center">
+												<div class="easy-pie-chart easy-pie-chart-normal"
+													data-percent="45"
+													data-color="white"
+													data-size="140"
+													data-line-width="8"
+													data-scale-color="false"
+													data-track-color="rgba(255,255,255,0.3)">
+													<span>45%</span>
+												</div>
+												<div class="padded">
+													<h3 class="no-margin-top">HDD Usage</h3>
+													<p>
+													<a href="#">Manage HDD Resources</a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 panels" id="ridb9b7d1002b4e3bd2959385b0f1d60e0c6">
+						<div class="carousel slide vertical tile-normal" data-ride="carousel">
+							<div class="carousel-inner bg-success-lt">
+								<div class="item active img-fill-vertical" style="background-image: url(http://i.imgur.com/ab4eUPl.png)">
+									<div class="padded">
+										<h4>Del Blog de Mi Casa</h4>
+										<h5>The State of Receipts</h5>
+										<p>An infographic detailing the issues facing receipt printing, along with Allegro's solution to remedy such issues.</p>
+									</div>
+									<div class="tile-content-bottom-left padded">
+										<a class="btn btn-sm btn-transparent-light" href="http://allegroreceipts.com/the-state-of-receipts-an-infographic/">
+											<i class="fa fa-comment-o"></i> Leer Mas
+										</a>
+									</div>
+								</div>
+								<div class="item img-fill-vertical" style="background-image: url(http://i.imgur.com/brpXhQT.png)">
+									<div class="padded">
+										<h4>Nuevas Ofertas en Mi Casa</h4>
+										<h5>The Team</h5>
+										<p>Find out more about the team that has worked diligently to make Allegro what it is.</p>
+									</div>
+									<div class="tile-content-bottom-left padded">
+										<a class="btn btn-sm btn-transparent-light" href="http://allegroreceipts.com/about-us/">
+											<i class="fa fa-comment-o"></i> Leer Mas
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<aside class="oc-sidebar oc-sidebar-right oc-sidebar-fixed">
+	<div class="oc-sidebar-header chat-sidebar-header">
+		<ul class="nav nav-tabs-oc nav-justified-all">
+			<li class="active">
+				<a href="#chat-users" class="btn-nav" data-toggle="tab"
+					rel="tooltip" data-placement="bottom" title="Users">
+					<i class="icm icm-users2"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#chat-recent" class="btn-nav" data-toggle="tab"
+					rel="tooltip" data-placement="bottom" title="Recent">
+					<i class="icm icm-clock"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#chat-favorites" class="btn-nav" data-toggle="tab"
+					rel="tooltip" data-placement="bottom" title="Favorites">
+					<i class="icm icm-star3"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#chat-settings" class="btn-nav" data-toggle="tab"
+					rel="tooltip" data-placement="bottom" title="Settings">
+					<i class="icm icm-cog2"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- Tab panes -->
+	<div class="tab-content oc-sidebar-content">
+		<div class="tab-pane high active fade in" id="chat-users">
+			<div class="oc-xs-push-push oc-sm-push-push oc-md-push-push oc-lg-push-push">
+				<div id="oc-wrapper-chat-1" class="oc-wrapper chat-oc-wrapper
+					oc-lg-right-push oc-md-right-push oc-sm-right-push oc-xs-right-push">
+					<div class="oc-push">
+						<div class="oc-container chat-oc-container" style="z-index: 1100;">
+							<form class="oc-header oc-search" role="search">
+								<div class="form-group has-header">
+									<span class="icm icm-filter3 form-control-header"></span>
+									<input type="text" class="form-control" placeholder="Filter contacts"
+									data-toggle="listfilter" data-target="#uid3cdabd07893c55451bdf1619e3ce8f78">
+								</div>
+							</form>
+							<div class="nano">
+								<ul class="nav nav-stacked nano-content" id="uid3cdabd07893c55451bdf1619e3ce8f78">
+									<li class="chat-contact unread">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-13.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Nadia Jones
+													<small class="last-message-date">27, Jun</small>
+												</div>
+												<small class="last-message">
+												Et minus dolore delectus ea...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact unread">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-21.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Harriet Morse
+													<small class="last-message-date">05, Feb</small>
+												</div>
+												<small class="last-message">
+												Enim fugit dolores nulla co...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact unread">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-06.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Sydney Lucas
+													<small class="last-message-date">09, Nov</small>
+												</div>
+												<small class="last-message">
+												Eos inventore aliquam quo n...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact ">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-20.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Jason Norman
+													<small class="last-message-date">11, Dec</small>
+												</div>
+												<small class="last-message">
+												Mollitia eaque voluptatibus...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact ">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-03.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Alberto Glover
+													<small class="last-message-date">26, Oct</small>
+												</div>
+												<small class="last-message">
+												Harum doloremque et autem l...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact ">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-02.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Joann Raynor
+													<small class="last-message-date">11, Sep</small>
+												</div>
+												<small class="last-message">
+												Molestiae in et quos quasi ...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-09.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Makenzie Olsen
+													<small class="last-message-date">26, Feb</small>
+												</div>
+												<small class="last-message">
+												Reprehenderit ut repellat l...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-23.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Samuel Baker
+													<small class="last-message-date">01, Jul</small>
+												</div>
+												<small class="last-message">
+												Accusamus est temporibus eo...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-04.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Janet Bowling
+													<small class="last-message-date">13, Jun</small>
+												</div>
+												<small class="last-message">
+												Et officiis quas veniam et ...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-01.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Bonita Moon
+													<small class="last-message-date">23, Jun</small>
+												</div>
+												<small class="last-message">
+												Sit quidem asperiores est a...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-11.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Margarita Allen
+													<small class="last-message-date">12, Nov</small>
+												</div>
+												<small class="last-message">
+												Corrupti modi nulla aut qui...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-07.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Freya McKenzie
+													<small class="last-message-date">10, Dec</small>
+												</div>
+												<small class="last-message">
+												Aut provident omnis earum d...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-10.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Johnnie Marsh
+													<small class="last-message-date">18, Feb</small>
+												</div>
+												<small class="last-message">
+												Quia omnis mollitia tempori...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-1" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-22.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Kyla Holloway
+													<small class="last-message-date">01, Jul</small>
+												</div>
+												<small class="last-message">
+												Est voluptate id molestias
+												</small>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<aside class="oc-sidebar oc-sidebar-right">
+						<div class="chat-conversation" id="uid24e90ccbeef8ced3a0fb6621e052aa00">
+							<div class="chat-contact unread">
+								<div class="media">
+									<a href="#oc-wrapper-chat-1" class="close" aria-hidden="true"
+										data-toggle="offcanvas" data-control="right"
+										data-states="open,hidden"
+									>&times;</a>
+									<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-08.png" />
+									<div class="media-body">
+										<div class="media-heading">
+											Marybeth Love
+										</div>
+										<small class="last-message">
+										Be right back, on phone
+										</small>
+									</div>
+								</div>
+							</div>
+							<div class="chat-messages nano">
+								<div class="nano-content">
+									<p class="text-center text-info small">
+									User went online
+									<span class="text-muted">at Mon Nov 16, 1998</span>
+									</p>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-20.png" />
+										Enim explicabo repudiandae iste a
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-03.png" />
+										Qui quis placeat voluptas aspernatur et labore excepturi
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-02.png" />
+										Odit suscipit voluptate amet nam amet aspernatur atque repellat veniam magni expedita magni
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-09.png" />
+										Recusandae quidem dolores corporis voluptate omnis explicabo nulla soluta sit maiores possimus quibusdam rerum et
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-23.png" />
+										Numquam quia sint quibusdam rem veritatis nihil ea in non nisi nisi labore voluptatum
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-04.png" />
+										Ad quod facilis culpa accusamus
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-01.png" />
+										Veritatis eum culpa temporibus quam magnam consequatur
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-11.png" />
+										Est quo maxime placeat
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-07.png" />
+										Deleniti quia ut et velit excepturi vero doloribus consequatur labore enim facilis autem corporis enim
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-10.png" />
+										Pariatur omnis magni dolor voluptatibus consequatur ea qui nihil occaecati quam molestiae consequuntur
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-22.png" />
+										Quaerat sunt aliquam iste aliquam molestias aperiam facilis aliquam deserunt eos error
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-08.png" />
+										Assumenda ut ullam pariatur
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-14.png" />
+										Necessitatibus ea et doloribus dolorem et
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-12.png" />
+										Enim aspernatur architecto nulla suscipit minima nostrum delectus debitis tenetur accusantium rem perspiciatis occaecati
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-05.png" />
+										Temporibus qui dignissimos magnam nesciunt corporis sed maiores ipsa in error vel consequatur voluptatibus
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-13.png" />
+										Ipsa impedit deleniti non aut et quidem nostrum minus sed
+										</p>
+									</div>
+									<p class="text-center text-warning small">
+									User went offline
+									<span class="text-muted">at Sat Jul 10, 1999</span>
+									</p>
+								</div>
+							</div>
+							<form role="form" class="chat-sender">
+								<textarea class="form-control" rows="2" placeholder="Type message..."></textarea>
+							</form>
+						</div>
+						<script type="text/template" id="chat-bubble-right-template">
+						<div class="clearfix">
+							<p class="chat-bubble chat-bubble-right">
+							<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-21.png" /><%= this.message %>
+							</p>
+						</div>
+						</script>
+						<script type="text/javascript">
+						new ChatView({ el: $('#uid24e90ccbeef8ced3a0fb6621e052aa00') });
+						</script>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade high" id="chat-recent">
+			<div class="oc-xs-push-push oc-sm-push-push oc-md-push-push oc-lg-push-push">
+				<div id="oc-wrapper-chat-2" class="oc-wrapper chat-oc-wrapper
+					oc-lg-right-push oc-md-right-push oc-sm-right-push oc-xs-right-push">
+					<div class="oc-push">
+						<div class="oc-container chat-oc-container" style="z-index: 1100;">
+							<form class="oc-header oc-search" role="search">
+								<div class="form-group has-header">
+									<span class="icm icm-filter3 form-control-header"></span>
+									<input type="text" class="form-control" placeholder="Filter contacts"
+									data-toggle="listfilter" data-target="#uid663299a0aeec37b3482225f6e8ee9833">
+								</div>
+							</form>
+							<div class="nano">
+								<ul class="nav nav-stacked nano-content" id="uid663299a0aeec37b3482225f6e8ee9833">
+									<li class="chat-contact unread">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-14.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Kaylin Clapp
+													<small class="last-message-date">27, Feb</small>
+												</div>
+												<small class="last-message">
+												Ea quis maxime magnam
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact unread">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-12.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Dora MacDonald
+													<small class="last-message-date">24, Jun</small>
+												</div>
+												<small class="last-message">
+												Non consequuntur dignissimo...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact unread">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-05.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Marybeth Davidson
+													<small class="last-message-date">16, Jun</small>
+												</div>
+												<small class="last-message">
+												Molestias occaecati asperio...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact ">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-13.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Abel Neal
+													
+													<small class="last-message-date">21, May</small>
+												</div>
+												<small class="last-message">
+												Unde maxime non minus delen...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact ">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-21.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Davion Wilkerson
+													
+													<small class="last-message-date">22, Jun</small>
+												</div>
+												<small class="last-message">
+												Explicabo eum commodi velit...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact ">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-06.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Paola Harvey
+													
+													<small class="last-message-date">19, Nov</small>
+												</div>
+												<small class="last-message">
+												Adipisci culpa animi nobis ...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-20.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Xena Clapp
+													
+													<small class="last-message-date">14, Aug</small>
+												</div>
+												<small class="last-message">
+												Aliquid sed dolorem ducimus...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-03.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Uriel Beasley
+													
+													<small class="last-message-date">17, Apr</small>
+												</div>
+												<small class="last-message">
+												Aperiam sint maiores occaec...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-02.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Terry Gray
+													
+													<small class="last-message-date">05, Jan</small>
+												</div>
+												<small class="last-message">
+												Blanditiis expedita blandit...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-09.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Justice Abrams
+													
+													<small class="last-message-date">26, Mar</small>
+												</div>
+												<small class="last-message">
+												Voluptate vel distinctio et...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-23.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Piper McAllister
+													
+													<small class="last-message-date">22, Apr</small>
+												</div>
+												<small class="last-message">
+												Voluptatibus ex voluptatem ...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-04.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Kenneth Powers
+													
+													<small class="last-message-date">11, Nov</small>
+												</div>
+												<small class="last-message">
+												Officiis cum ad eum quis ni...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-01.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Allyson Shaffer
+													
+													<small class="last-message-date">07, Nov</small>
+												</div>
+												<small class="last-message">
+												Dicta architecto sapiente m...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-2" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-11.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Emely Monroe
+													
+													<small class="last-message-date">03, Aug</small>
+												</div>
+												<small class="last-message">
+												Libero cum consectetur hic
+												</small>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<aside class="oc-sidebar oc-sidebar-right">
+						<div class="chat-conversation" id="uid55b9d6571b848813c33d5991ccf32cdf">
+							<div class="chat-contact unread">
+								<div class="media">
+									<a href="#oc-wrapper-chat-2" class="close" aria-hidden="true"
+										data-toggle="offcanvas" data-control="right"
+										data-states="open,hidden"
+									>&times;</a>
+									<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-07.png" />
+									<div class="media-body">
+										<div class="media-heading">
+											Rafael Proctor
+										</div>
+										<small class="last-message">
+										Be right back, on phone
+										</small>
+									</div>
+								</div>
+							</div>
+							<div class="chat-messages nano">
+								<div class="nano-content">
+									<p class="text-center text-info small">
+									User went online
+									<span class="text-muted">at Sun Jan 17, 1999</span>
+									</p>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-06.png" />
+										Neque cum veritatis nesciunt eos aspernatur
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-20.png" />
+										Itaque aut cumque saepe velit
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-03.png" />
+										Est dolorum voluptas aliquam aut alias aut
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-02.png" />
+										Consectetur quaerat voluptas soluta quis dignissimos voluptatem sunt et magnam
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-09.png" />
+										Sed iure consectetur labore sit sint illum quibusdam fuga repudiandae et molestiae corporis
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-23.png" />
+										Aperiam voluptas amet fuga ullam dolor voluptas
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-04.png" />
+										Quia et deserunt consectetur ad autem dolores sunt qui tempore molestias nihil
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-01.png" />
+										Beatae odio architecto porro iusto inventore tenetur numquam quod deleniti
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-11.png" />
+										Consequuntur impedit ducimus aliquam sapiente amet mollitia iure consequuntur molestiae voluptatem reiciendis molestiae
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-07.png" />
+										Autem a corrupti tempore fugit qui quia mollitia
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-10.png" />
+										Est quis magni quas rerum vel sed quia et aut
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-22.png" />
+										Saepe sequi vero repellat neque molestiae optio et optio quia totam ut totam
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-08.png" />
+										Et veniam in rem
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-14.png" />
+										Mollitia et soluta ut id aut at perspiciatis
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-12.png" />
+										Non rem ratione tempore alias
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-05.png" />
+										Quasi voluptatem nihil earum atque illo omnis debitis laudantium est aut aut
+										</p>
+									</div>
+									<p class="text-center text-warning small">
+									User went offline
+									<span class="text-muted">at Mon Oct 23, 2006</span>
+									</p>
+								</div>
+							</div>
+							<form role="form" class="chat-sender">
+								<textarea class="form-control" rows="2" placeholder="Type message..."></textarea>
+							</form>
+						</div>
+						<script type="text/template" id="chat-bubble-right-template">
+						<div class="clearfix">
+							<p class="chat-bubble chat-bubble-right">
+							<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-13.png" /><%= this.message %>
+							</p>
+						</div>
+						</script>
+						<script type="text/javascript">
+						new ChatView({ el: $('#uid55b9d6571b848813c33d5991ccf32cdf') });
+						</script>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade high" id="chat-favorites">
+			<div class="oc-xs-push-push oc-sm-push-push oc-md-push-push oc-lg-push-push">
+				<div id="oc-wrapper-chat-3" class="oc-wrapper chat-oc-wrapper
+					oc-lg-right-push oc-md-right-push oc-sm-right-push oc-xs-right-push">
+					<div class="oc-push">
+						<div class="oc-container chat-oc-container" style="z-index: 1100;">
+							<form class="oc-header oc-search" role="search">
+								<div class="form-group has-header">
+									<span class="icm icm-filter3 form-control-header"></span>
+									<input type="text" class="form-control" placeholder="Filter contacts"
+									data-toggle="listfilter" data-target="#uid3860883b41f2828a00c5ccc5750d426e">
+								</div>
+							</form>
+							<div class="nano">
+								<ul class="nav nav-stacked nano-content" id="uid3860883b41f2828a00c5ccc5750d426e">
+									<li class="chat-contact unread">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-10.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Melinda Schultz
+													
+													<small class="last-message-date">23, Jul</small>
+												</div>
+												<small class="last-message">
+												Aliquid dolor consectetur v...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact unread">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-22.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Bryce Hobbs
+													
+													<small class="last-message-date">16, Sep</small>
+												</div>
+												<small class="last-message">
+												Rerum optio voluptatem est ...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact unread">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-08.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Jadyn Barton
+													
+													<small class="last-message-date">30, Nov</small>
+												</div>
+												<small class="last-message">
+												Minus ex delectus dolorum e...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact ">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-14.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Phil Wu
+													
+													<small class="last-message-date">22, Apr</small>
+												</div>
+												<small class="last-message">
+												Quos eveniet iusto omnis ipsum
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact ">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-12.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Lynette James
+													
+													<small class="last-message-date">09, Jan</small>
+												</div>
+												<small class="last-message">
+												Voluptate at molestiae iust...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact ">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-05.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Monty Matthews
+													
+													<small class="last-message-date">28, Feb</small>
+												</div>
+												<small class="last-message">
+												Minima quae harum rem sunt ...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-13.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Emiliano Waters
+													
+													<small class="last-message-date">21, Apr</small>
+												</div>
+												<small class="last-message">
+												Dolorum facere voluptates i...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-21.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Piper Schroeder
+													
+													<small class="last-message-date">07, Oct</small>
+												</div>
+												<small class="last-message">
+												Atque illum error eius dict...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-06.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Billie Olsen
+													
+													<small class="last-message-date">09, Aug</small>
+												</div>
+												<small class="last-message">
+												Aut soluta laborum laborum ...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-20.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Alondra Puckett
+													
+													<small class="last-message-date">29, Jan</small>
+												</div>
+												<small class="last-message">
+												Aperiam quasi quia ipsa ver...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-03.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Constance Bowling
+													
+													<small class="last-message-date">21, Aug</small>
+												</div>
+												<small class="last-message">
+												Rem in impedit earum facili...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-02.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Shawn Monroe
+													
+													<small class="last-message-date">05, Apr</small>
+												</div>
+												<small class="last-message">
+												Ratione est nulla earum ani...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-09.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Mya Sykes
+													
+													<small class="last-message-date">17, Mar</small>
+												</div>
+												<small class="last-message">
+												Non reprehenderit aliquid e...
+												</small>
+											</div>
+										</a>
+									</li>
+									<li class="chat-contact offline">
+										<a href="#oc-wrapper-chat-3" class="media"
+											data-toggle="offcanvas" data-control="right"
+											data-states="open,hidden"
+											>
+											<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-23.png" />
+											<div class="media-body">
+												<div class="media-heading">
+													Perla Grant
+													
+													<small class="last-message-date">14, Feb</small>
+												</div>
+												<small class="last-message">
+												Nobis dolorem voluptas vel ...
+												</small>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<aside class="oc-sidebar oc-sidebar-right">
+						<div class="chat-conversation" id="uid6f1eb0722d53c8255e17433797f2869c">
+							<div class="chat-contact unread">
+								<div class="media">
+									<a href="#oc-wrapper-chat-3" class="close" aria-hidden="true"
+										data-toggle="offcanvas" data-control="right"
+										data-states="open,hidden"
+									>&times;</a>
+									<img class="media-object pull-left img-circle" src="../images/faker/avatars/48/Faces_Users-04.png" />
+									<div class="media-body">
+										<div class="media-heading">
+											Jared Adkins
+										</div>
+										<small class="last-message">
+										Be right back, on phone
+										</small>
+									</div>
+								</div>
+							</div>
+							<div class="chat-messages nano">
+								<div class="nano-content">
+									<p class="text-center text-info small">
+									User went online
+									<span class="text-muted">at Fri Jul 20, 2001</span>
+									</p>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-21.png" />
+										Enim illum laudantium delectus corporis autem sit qui dolor occaecati sit corporis nam ut enim
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-06.png" />
+										Velit voluptas facere eum nesciunt perspiciatis a cumque et similique dicta qui facilis sapiente assumenda
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-20.png" />
+										Itaque dolores officia dolor in vel aut autem quod
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-03.png" />
+										Ad et minus saepe omnis dolore molestias
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-02.png" />
+										Mollitia aliquam debitis non non ut qui velit est aut placeat
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-09.png" />
+										Nam molestiae illum doloremque nulla fugit ullam et et
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-23.png" />
+										Quia animi quaerat consectetur voluptatum similique quam non ut consequatur autem
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-04.png" />
+										Aut voluptas harum asperiores libero velit similique sed tempore cumque
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-01.png" />
+										Occaecati modi qui exercitationem expedita architecto temporibus dolorem
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-11.png" />
+										Nemo enim nostrum et dolor ut molestiae qui id rerum voluptates
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-07.png" />
+										Ratione placeat et provident
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-10.png" />
+										Occaecati aut voluptas odit dignissimos et recusandae
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-22.png" />
+										Quasi tenetur distinctio iste et similique nulla nostrum
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-08.png" />
+										Possimus id illo excepturi corrupti corporis quo
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-left">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-left" src="../images/faker/avatars/24/Faces_Users-14.png" />
+										Culpa quod aperiam facere cum
+										</p>
+									</div>
+									<div class="clearfix">
+										<p class="chat-bubble chat-bubble-right">
+										<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-12.png" />
+										Nobis tenetur nobis soluta ratione praesentium ut neque nemo facilis ut blanditiis
+										</p>
+									</div>
+									<p class="text-center text-warning small">
+									User went offline
+									<span class="text-muted">at Wed Nov 20, 1996</span>
+									</p>
+								</div>
+							</div>
+							<form role="form" class="chat-sender">
+								<textarea class="form-control" rows="2" placeholder="Type message..."></textarea>
+							</form>
+						</div>
+						<script type="text/template" id="chat-bubble-right-template">
+						<div class="clearfix">
+							<p class="chat-bubble chat-bubble-right">
+							<img class="img-circle chat-bubble-avatar chat-bubble-avatar-right" src="../images/faker/avatars/24/Faces_Users-05.png" /><%= this.message %>
+							</p>
+						</div>
+						</script>
+						<script type="text/javascript">
+						new ChatView({ el: $('#uid6f1eb0722d53c8255e17433797f2869c') });
+						</script>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade high" id="chat-settings">
+			<form class="oc-header oc-form" role="search">
+				<div class="form-group has-header">
+					<span class="icm icm-bubble form-control-header"></span>
+					<input type="text" class="form-control" placeholder="Status message">
+				</div>
+			</form>
+			<div class="oc-inner switch-label">
+				<p>Chat always on</p>
+				<div class="switch switch-primary switch-medium pull-right">
+					<input type="checkbox" checked rel="switch">
+				</div>
+			</div>
+			<div class="oc-inner switch-label">
+				<p>Notify incoming chat messages</p>
+				<div class="switch switch-success switch-medium pull-right">
+					<input type="checkbox" checked rel="switch">
+				</div>
+			</div>
+			<div class="oc-inner switch-label">
+				<p>Notify contacts online status</p>
+				<div class="switch switch-info switch-medium pull-right">
+					<input type="checkbox" checked rel="switch">
+				</div>
+			</div>
+			<div class="oc-inner switch-label">
+				<p>Do not message me when invisible</p>
+				<div class="switch switch-warning switch-medium pull-right">
+					<input type="checkbox" checked rel="switch">
+				</div>
+			</div>
+			<div class="oc-inner switch-label">
+				<p>Do not accept messages from banned users</p>
+				<div class="switch switch-danger switch-medium pull-right">
+					<input type="checkbox" checked rel="switch">
+				</div>
+			</div>
+		</div>
+	</div>
+</aside>
+</div>
+</div>
+<!-- Needed by BSE.Mq.screen() helper in utils.js -->
+<div id="mq"></div>
+<!-- Needed by EmVars helper in _emerald.js -->
+<div id="emvars"></div>
+</body>
+</html>

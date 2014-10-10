@@ -6,6 +6,26 @@
 	<title>Mi Casa / Viviendas </title>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/theme.css" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(-8.1080957,-79.0210783);
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+    		position: myLatlng,
+    		title:"Hello World!"
+		})
+		marker.setMap(map)
+       }
+		
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 <body>
 	<div id="page-wrapper">
@@ -119,7 +139,6 @@
 	            <ul class="page-links pull-right">
 	              <li><a href="#"><i class="fa fa-share bg-3"></i></a></li>
 	              <li><a href="#"><i class="fa fa-print bg-2"></i></a></li>
-	              <li><a href="#"><i class="fa fa-star bg-4"></i>Agregar a Favoritos</a></li>
 	            </ul>
 	            <!-- /Links -->
 	            
@@ -138,7 +157,7 @@
 	          <div id="product-details" class="row">
 	          
 	            <!-- Images Side -->
-	            <div class="col-sm-8 col-md-8 space-b-xs">
+	            <div class="col-sm-8 col-md-8 blog-entry">
 
 	              <div class="clearfix">
 	              
@@ -157,10 +176,29 @@
 	                <!-- /Main Image -->
 	                
 	              </div>
+	              <h4>Vivienda en Trujillo</h4>
+	              <div class="meta">
+                    <span class="date"><i class="fa fa-calendar"></i><a href="#">Jul. 09, 2014</a></span>
+                    <span class="author"><i class="fa fa-user"></i><a href="#">por Constructora ABC</a></span>
+                    <span class="tag"><i class="fa fa-tags"></i><a href="#">Trujillo </a>, <a href="#">Flat</a></span>
+                  </div>
+                  <div class="pull-left">
+                  		<h5>Compartir En:</h5>
+                  		<ul class="social-buttons colored-bg round clearfix">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+				  </div>
+                  <div class="pull-right">
+                      <h5>Acciones:</h5>
+	                  <button class="btn btn-success"><i class="fa fa-star"></i><span>Agregar a Favoritos</span></button>
+	                  <button class="btn btn-primary"><i class="fa fa-map-marker"></i><span>Ver Mapa</span></button>
+	                  <a href="https://plus.google.com/photos/+HugoBarra/albums/5808606988734372865/5808607006181698834?pid=5808607006181698834&oid=110023707389740934545" class="btn btn-primary"><i class="fa fa-eye"></i><span>Ver Photosfera</span></a>
 
+                  </div>
 	            </div>
 	            <!-- Image Side /END -->
-	            
 	            <!-- Product Info Side -->
 	            <div class="col-sm-4 col-md-4">
 	            
@@ -177,7 +215,7 @@
 	                    <i class="fa fa-star"></i>
 	                    <i class="fa fa-star disabled"></i>
 	                  </div>
-	                  <span>26 usuario(s). <a href="#"> Agregar a favoritos.</a></span>
+	                  <span>26 usuario(s). <a href="#"> Calificar.</a></span>
 	                </div>
 	                
 	                <div class="price-box clearfix">
@@ -187,6 +225,8 @@
 
 	                <div class="attributes-box">
 	                  <strong>Estado:</strong><span>En Contruccion</span><br>
+	                  <strong>Area Total:</strong><span>50 m<sup>2</sup></span><br>
+	                  <strong>Area Construida:</strong><span>50 m<sup>2</sup></span><br>
 	                  <strong>Pisos:</strong><span>1</span><br>
 	                  <strong>Contructora:</strong><span> Contructora ABC.</span>
 	                </div>
@@ -224,7 +264,7 @@
 	          
 	            <!-- Column -->
 	            <div class="col-sm-8 col-md-8 space-b-xs">
-	            
+	              <h4>Datos Generales</h4>
 	              <!-- Tab Nav-->
 	              <ul class="nav nav-tabs  product-nav-tabs">
 	                <li class="active">
@@ -291,7 +331,9 @@
 	                </div>
 	                <!-- /Tab -->
 	                
-	              </div>
+	               </div>
+	               <h4>Mapa</h4>
+	               <div id="map_canvas"></div>
 	              <!-- Tab panes /END-->
 	            </div>
 	            <!-- /Column -->
